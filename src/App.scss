@@ -57,8 +57,8 @@
 }
 
 .btn-round {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background-color: pink;
   color:blueviolet;
   font-size: 30px;
@@ -75,4 +75,32 @@
   font-size: 30px;
   font-weight: bold;
   margin: 30px;
+}
+.shape {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-size: 40px;
+  background-color: olive;
+  transition: 0.2s;
+}
+
+.btn-blue {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  margin: 5px;
+}
+
+
+
+.btn-red {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  margin: 5px;
+  border: 1px solid white;
 }

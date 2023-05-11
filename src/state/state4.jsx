@@ -3,9 +3,19 @@ import { useState } from 'react';
 paspaudus dar kartą- dar vienas ir t.t.
 
 */
-export default function State4(){
-    return
-    <div>
-        <button className='button'>Add</button>
-    </div>
+
+export default function State04 () {
+    const [squareList, setSquareList] = useState([])
+    const addSquare =_=> {
+        setSquareList([...squareList, <div className="btn-blue"></div>]);
+    }
+    
+    return (
+        <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: 30}}>
+            <button className="button" onClick={addSquare}>ADD</button>
+            <div style={{display: "flex"}}>
+                {squareList}
+            </div>
+        </div>
+    )
 }
